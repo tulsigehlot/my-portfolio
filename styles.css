@@ -219,8 +219,27 @@
   
   
   /*=============== HOME ===============*/
+  .home_container{
+    position: relative;
+    row-gap: 4.5rem;
+    padding-top: 2rem;
+  }
+
+  .home_data{
+    text-align: center;
+  }
   
-  
+  .home_greeting,
+  .home_education{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .home_greeting{
+    display: block;
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+  }
   /*=============== BUTTONS ===============*/
   
   
