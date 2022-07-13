@@ -16,8 +16,19 @@ window.addEventListener('scroll', scrollHeader)
 /* Link active work */ 
 
 
-/*=============== SWIPER TESTIMONIAL ===============*/
-
+/*=============== SWIPER WORK ===============*/
+let swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 

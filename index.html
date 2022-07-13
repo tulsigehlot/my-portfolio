@@ -20,6 +20,11 @@
 
     <!-- =================CSS========================= -->
     <link rel="stylesheet" href="src/styles.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
 
     <!-- =================JAVASCRIPT========================= -->
     <script defer src="src/script.js"></script>
@@ -188,19 +193,21 @@
         <span class="section__subtitle">My Portfolio</span>
         <h2 class="section__title">Projects</h2>
 
-        <div class="work__conitainer container">
-          <div>
-            <div class="work__card">
+        <div class="work__conitainer container swiper">
+          <div class="swiper-wrapper">
+            <div class="work__card swipper-slide">
               <img src="src/img/clipboardlanding-img.png" alt="clipboardlanding" class="card" >
+                  <p class="work__name">Clipboard Landing Page</p>
               <div class="home_buttons">
-                <a  href="https://copylanding.netlify.app/" class="button button--ghost" >
+                <a  href="https://copylanding.netlify.app/" class="button button--ghost" target="_blank">
                   Live Demo
                 </a>
                 <a href="https://github.com/tulsigehlot/clipboard-landing-page" class="button"  target="_blank">Source code</a>
               </div>
 
-              <div class="work__card">
+              <div class="work__card swipper-slide">
                 <img src="src/img/mapty-img.png" alt="mapty" class="card">
+                  <p class="work__name">Mapty App</p>
                 <div class="home_buttons">
                   <a  href="https://maptyfi.netlify.app/" class="button button--ghost" target="_blank">
                     Live Demo
@@ -208,8 +215,9 @@
                   <a href="https://github.com/tulsigehlot/maptify" class="button" target="_blank">Source code</a>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card swipper-slide">
                   <img src="src/img/guessmynumber-img.png" alt="guessmynumber" class="card">
+                    <p class="work__name">Guess My Number Game</p>
                   <div class="home_buttons">
                     <a  href="https://guessing-thenumber.netlify.app/" class="button button--ghost" target="_blank">
                       Live Demo
@@ -217,8 +225,9 @@
                     <a href="https://github.com/tulsigehlot/guess-my-number" class="button" target="_blank">Source code</a>
                   </div>
 
-                  <div class="work__card">
+                  <div class="work__card swipper-slide">
                     <img src="src/img/weatherapp-img.png" alt="weatherapp" class="card">
+                      <p class="work__name">DropsDown- Weather App</p>
                     <div class="home_buttons">
                       <a  href="https://dropsdown.netlify.app/" class="button button--ghost" target="_blank">
                         Live Demo
@@ -233,7 +242,7 @@
 
       </section>
 
-      <!-- ================= contact ========================= -->
+      <!-- ================= CONTACT ========================= -->
       <section class="contact section" id="contact"></section>
     </main>
 
@@ -241,5 +250,9 @@
     <footer class="footer"></footer>
 
     <!-- ================= SCROLLREVEAL ========================= -->
+
+        <!-- ================= SWIPER ========================= -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   </body>
 </html>
