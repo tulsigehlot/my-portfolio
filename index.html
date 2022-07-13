@@ -19,10 +19,10 @@
     />
 
     <!-- =================CSS========================= -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
 
     <!-- =================JAVASCRIPT========================= -->
-    <script defer src="script.js"></script>
+    <script defer src="src/script.js"></script>
 
     <title>My Portfolio - TULSI GEHLOT</title>
   </head>
@@ -81,15 +81,15 @@
             <h3 class="home_education">Frontend Developer</h3>
 
             <div class="home_buttons">
-              <a download="" href="" class="button button--ghost">
-                Download Cv
+              <a download="" href="" class="button button--ghost" target="_blank">
+                Download CV
               </a>
-              <a href="#about" class="button">About me</a>
+              <a href="#about" class="button" target="_blank">About me</a>
             </div>
           </div>
 
           <div class="home_handle">
-            <img src="/img/profile.png" alt="" class="home_img" />
+            <img src="src/img/profile.png" alt="" class="home_img" />
           </div>
 
           <!-- <div class="home_social">
@@ -112,7 +112,7 @@
         <h2 class="section__title">About Me</h2>
 
         <div class="about__container container grid">
-          <img src="/img/about.jpg" alt="" class="about__img" />
+          <img src="src/img/about.jpg" alt="" class="about__img" />
 
           <div class="about__data">
             <p class="about__description">
@@ -128,8 +128,8 @@
         </div>
       </section>
       <!-- ================= skills ========================= -->
-      <section class="home section" id="skills">
-        <span class="section__subtitle">My abilities</span>
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">My Abilities</span>
         <h2 class="section__title">Skills</h2>
 
         <div class="skills__container container grid">
@@ -184,9 +184,57 @@
         </div>
       </section>
       <!-- ================= work ========================= -->
-      <section class="home section" id="work"></section>
+      <section class="work section" id="work">
+        <span class="section__subtitle">My Portfolio</span>
+        <h2 class="section__title">Projects</h2>
+
+        <div class="work__conitainer container">
+          <div>
+            <div class="work__card">
+              <img src="src/img/clipboardlanding-img.png" alt="clipboardlanding" class="card" >
+              <div class="home_buttons">
+                <a  href="https://copylanding.netlify.app/" class="button button--ghost" >
+                  Live Demo
+                </a>
+                <a href="https://github.com/tulsigehlot/clipboard-landing-page" class="button"  target="_blank">Source code</a>
+              </div>
+
+              <div class="work__card">
+                <img src="src/img/mapty-img.png" alt="mapty" class="card">
+                <div class="home_buttons">
+                  <a  href="https://maptyfi.netlify.app/" class="button button--ghost" target="_blank">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/tulsigehlot/maptify" class="button" target="_blank">Source code</a>
+                </div>
+
+                <div class="work__card">
+                  <img src="src/img/guessmynumber-img.png" alt="guessmynumber" class="card">
+                  <div class="home_buttons">
+                    <a  href="https://guessing-thenumber.netlify.app/" class="button button--ghost" target="_blank">
+                      Live Demo
+                    </a>
+                    <a href="https://github.com/tulsigehlot/guess-my-number" class="button" target="_blank">Source code</a>
+                  </div>
+
+                  <div class="work__card">
+                    <img src="src/img/weatherapp-img.png" alt="weatherapp" class="card">
+                    <div class="home_buttons">
+                      <a  href="https://dropsdown.netlify.app/" class="button button--ghost" target="_blank">
+                        Live Demo
+                      </a>
+                      <a href="https://github.com/tulsigehlot/DropsDown" class="button" target="_blank">Source code</a>
+                    </div>
+      
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       <!-- ================= contact ========================= -->
-      <section class="home section" id="contact"></section>
+      <section class="contact section" id="contact"></section>
     </main>
 
     <!-- ================= FOOTER ========================= -->
