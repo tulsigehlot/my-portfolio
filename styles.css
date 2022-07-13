@@ -218,6 +218,9 @@ header {
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
 }
 /* Change background header */
+.scroll-header {
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+}
 
 /*=============== HOME ===============*/
 .home_container {
@@ -271,44 +274,98 @@ header {
   overflow: hidden;
 }
 
-.home_buttons{
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 1.5rem;
+.home_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 /*=============== BUTTONS ===============*/
-.button{
-    display: inline-block;
-    background-color: var(--first-color);
-    color: var(--body-color);
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    font-weight: var(--font-medium);
-    transition: 0.4s;
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.4s;
 }
 
-.button:hover{
-    background-color: var(--first-color-alt);
-    color: var(--body-color);
+.button:hover {
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
 }
 
-.button--ghost{
-    background-color: transparent;
-    border: 2px solid var(--first-color);
-    color: var(--first-color);
+.button--ghost {
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
 }
-
 
 /*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 2.5rem;
+}
+
+.about__img {
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+  
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
 
 /*=============== SKILLS ===============*/
 
-/*=============== SERVICES ===============*/
+.skills__container{
+  row-gap: 2rem;
+  padding-top: 1rem;
+  /* display: flex; */
+  /* border: 2px solid red; */
+}
 
-/* Services modal */
+.skills__content{
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
 
-/*Active modal*/
+.skills__box{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 3.5rem;
+}
+
+.skills__group{
+  display: grid;
+  align-content: flex-start;
+  row-gap:1rem ;
+}
+
+.skills__data{
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+
+#skills .bx{
+  font-size: 3rem;
+  color: var(--first-color);
+}
+
+.skills__name{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  line-height: 50px;
+}
 
 /*=============== WORK ===============*/
 
