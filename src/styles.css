@@ -112,8 +112,27 @@ img {
 }
 
 /* ========================= THEME ============================== */
+.change-theme{
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-/* ========================= Variables Dark theme  ============================== */
+.change-theme:hover{
+  color: var(--first-color);
+}
+
+/* ========================= Variables Light theme  ============================== */
+
+body.light-theme{
+  --title-color: hsl(var(--second--hue), 15%, 15%);
+  --text-color: hsl(var(--second--hue), 8%, 35%);
+  --body-color: hsl(var(--second--hue), 48%, 99%);
+  --container-color: #fff;
+
+}
+
+
 
 /*========== 
     Color changes in some parts of 
@@ -174,17 +193,17 @@ header {
   align-items: center;
 }
 
-.nav_logo {
+.nav__logo {
   color: var(--first-color);
   font-weight: var(--font-medium);
   transition: 0.4s;
 }
 
-.nav_logo:hover {
+.nav__logo:hover {
   color: var(--first-color-alt);
 }
 
-.nav_menu {
+.nav__menu {
   position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second--hue), 32%, 16%, 0.8);
@@ -194,13 +213,13 @@ header {
   backdrop-filter: blur(10px);
 }
 
-.nav_list {
+.nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav_link {
+.nav__link {
   color: var(--text-color);
   font-size: 1.25rem;
   padding: 0.4rem;
@@ -223,42 +242,42 @@ header {
 }
 
 /*=============== HOME ===============*/
-.home_container {
+.home__container {
   position: relative;
   row-gap: 4.5rem;
   padding-top: 2rem;
 }
 
-.home_data {
+.home__data {
   text-align: center;
 }
 
-.home_greeting,
-.home_education {
+.home__greeting,
+.home__education {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
 
-.home_greeting {
+.home__greeting {
   display: block;
   color: var(--title-color);
   margin-bottom: 0.25rem;
 }
 
-.home_education {
+.home__education {
   color: var(--text-color);
   margin-bottom: 2.5rem;
 }
 
-.home_name {
+.home__name {
   font-size: var(--biggest-font-size);
 }
 
-.home_img {
+.home__img {
   width: 160px;
 }
 
-.home_handle {
+.home__handle {
   justify-self: center;
   width: 190px;
   height: 293px;
@@ -274,7 +293,7 @@ header {
   overflow: hidden;
 }
 
-.home_buttons {
+.home__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
