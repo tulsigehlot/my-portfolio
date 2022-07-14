@@ -117,7 +117,7 @@ sr.reveal('.section__title',{
 });
 
 sr.reveal('.about__img',{
-  origin :'bottom'
+  origin :''
 })
 sr.reveal('.about__description',{
   delay: 100,
@@ -134,7 +134,7 @@ sr.reveal('.skills__data',{
   delay: 200
 });
 
-sr.reveal('.work__card',{
+sr.reveal('.work__container',{
   delay: 500,
   origin:'bottom'
 
