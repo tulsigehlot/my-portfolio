@@ -110,7 +110,7 @@
 
           <div class="about__data">
             <p class="about__description">
-              Hey I'm Tulsi! and I'm a student od BCA(Bachelor of Computer
+              Hey I'm Tulsi! and I'm a student of BCA(Bachelor of Computer
               Applications). I'm a Frontend Developer from India. I'm deeply
               passionate about Frontend Development and love to create websites.
               Other than Frontend Development, I like to cook and watch movies
@@ -277,7 +277,7 @@
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
-      </section>>
+      </section>
 
       <!-- ================= CONTACT ========================= -->
       <section class="contact section" id="contact"></section>
@@ -322,7 +322,9 @@
           <div class="contact__content">
             <h3 class="contact__title">Write me your project</h3>
 
-            <form action="" class="contact__form">
+            <form action="https://api.web3forms.com/submit" method="POST"class="contact__form">
+
+              <input type="hidden" name="access_key" value="32f827e8-5ab5-47ac-bc63-bfa28ee44382">
 
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Name</label>
@@ -339,7 +341,9 @@
                 <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
               </div>
 
-              <button class="button">Send Message</button>
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+              <button type="submit" class="button">Send Message</button>
             </form>
           </div>
 
