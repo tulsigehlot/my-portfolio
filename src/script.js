@@ -107,3 +107,67 @@ const sr =ScrollReveal({
 sr.reveal('.home__data')
 sr.reveal('.home__handle',{delay:700})
 sr.reveal('.home__social',{delay:900 , origin:'bottom'})
+
+
+// ===============about me================
+
+sr.reveal('.section__subtitle');
+sr.reveal('.section__title',{
+  delay: 200
+});
+
+sr.reveal('.about__img',{
+  origin :'bottom'
+})
+sr.reveal('.about__description',{
+  delay: 100,
+  origin :'top'
+});
+
+sr.reveal('.skills__content',{
+  delay: 200
+});
+
+
+
+sr.reveal('.skills__data',{
+  delay: 200
+});
+
+sr.reveal('.work__card',{
+  delay: 500,
+  origin:'bottom'
+
+});
+sr.reveal('.contact__info',{
+  delay: 500,
+  origin :'left'
+});
+
+
+sr.reveal('.contact__form-div',{
+  origin :'right'
+});
+
+sr.reveal('.footer',{
+  delay: 200,
+  origin :'bottom'
+});
+
+sr.reveal('.footer__list',{
+  delay: 200,
+  origin :'bottom'
+});
+
+sr.reveal('.footer__social',{
+  delay: 200,
+  origin :'bottom'
+});
+
+sr.reveal('.footer__copy',{
+  delay: 200,
+  origin :'bottom'
+});
+
+
+
