@@ -391,18 +391,21 @@ header {
 .skills__container{
   row-gap: 2rem;
   padding-top: 0.5rem;
+  
 }
 
 .skills__content{
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
+  
 }
 
 .skills__box{
   display: flex;
   justify-content: center;
   column-gap: 2.5rem;
+
 }
 
 .skills__group{
@@ -432,7 +435,7 @@ header {
 /*=============== WORK ===============*/
 .work{
   padding: 18px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .work__card{
   background-color: var(--container-color);
@@ -744,10 +747,108 @@ header {
     right: 0;
     margin: 0 auto;
   }
-    }
-    
+  }
+ }
+/* For large devices */
+
+@media screen and (min-width: 992px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
   }
 
-}
+  .section{
+    padding: 6.5rem 0 1rem;
+  }
 
-/* For large devices */
+  .section__title{
+    margin-bottom: 3.5rem;
+  }
+  
+  .nav{
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__menu{
+    width: 650px;
+  }
+
+  .home__handle{
+    width: 290px;
+    height: 400px;
+  }
+
+  .home__img{
+    width: 220px;
+  }
+
+  .about__container{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about__img{
+    width: 350px;
+  }
+
+  .about__data{
+    text-align: justify;
+   margin-top: 70px;
+
+  }
+
+  .about__description{
+    padding: 0 4rem 0 0 ;
+  }
+
+  .skills__container{
+   width: 850px;
+  }
+
+  .skills__content{
+    width: 850px;
+    height: 300px;
+
+  }
+  .skills__group{
+        justify-content: center;
+         margin-top: -15px;
+        row-gap: 3rem;
+  }
+
+  .skills__data{
+    display: flex;
+    column-gap: 4rem;
+  
+  }
+  
+  
+  #skills .bx{
+    font-size: 3.5rem;
+    color: var(--first-color);
+  }
+  
+  .skills__name{
+    font-size: var(--biggest-font-size);
+    font-weight : var(--font-medium);
+    line-height: 50px;
+  }
+  
+  .work__container{
+    width: 850px;
+  }
+
+  .work__card{
+    padding: 1.5rem 2rem;
+  }
+
+  .contact__container{
+    column-gap: 7rem;
+     
+  }
+
+  .footer__social-link{
+    font-size: 1.25rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+  }
+}
