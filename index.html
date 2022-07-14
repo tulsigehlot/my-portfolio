@@ -20,14 +20,17 @@
 
     <!-- =================CSS========================= -->
     <link rel="stylesheet" href="src/styles.css" />
-    <link
+
+    <!-- =================SWIPER CSS========================= -->
+    <link rel="stylesheet" href="src/swiper-bundle.min.css" />
+    <!-- <link
   rel="stylesheet"
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-
+/> -->
 
     <!-- =================JAVASCRIPT========================= -->
-    <script defer src="src/script.js"></script>
+    <!-- <script defer src="src/script.js"></script> -->
+    
 
     <title>My Portfolio - TULSI GEHLOT</title>
   </head>
@@ -86,7 +89,12 @@
             <h3 class="home_education">Frontend Developer</h3>
 
             <div class="home_buttons">
-              <a download="" href="" class="button button--ghost" target="_blank">
+              <a
+                download=""
+                href=""
+                class="button button--ghost"
+                target="_blank"
+              >
                 Download CV
               </a>
               <a href="#about" class="button" target="_blank">About me</a>
@@ -193,66 +201,178 @@
         <span class="section__subtitle">My Portfolio</span>
         <h2 class="section__title">Projects</h2>
 
-        <div class="work__conitainer container swiper">
+        <div class="work__container container swiper">
           <div class="swiper-wrapper">
-            <div class="work__card swipper-slide">
-              <img src="src/img/clipboardlanding-img.png" alt="clipboardlanding" class="card" >
-                  <p class="work__name">Clipboard Landing Page</p>
+            <div class="work__card swiper-slide">
+              <img
+                src="src/img/clipboardlanding-img.png"
+                alt="clipboardlanding"
+                class="card"
+              />
+              <p class="work__name">Clipboard Landing Page</p>
               <div class="home_buttons">
-                <a  href="https://copylanding.netlify.app/" class="button button--ghost" target="_blank">
+                <a
+                  href="https://copylanding.netlify.app/"
+                  class="button button--ghost"
+                  target="_blank"
+                >
                   Live Demo
                 </a>
-                <a href="https://github.com/tulsigehlot/clipboard-landing-page" class="button"  target="_blank">Source code</a>
+                <a
+                  href="https://github.com/tulsigehlot/clipboard-landing-page"
+                  class="button"
+                  target="_blank"
+                  >Source code</a
+                >
               </div>
-
-              <div class="work__card swipper-slide">
-                <img src="src/img/mapty-img.png" alt="mapty" class="card">
-                  <p class="work__name">Mapty App</p>
-                <div class="home_buttons">
-                  <a  href="https://maptyfi.netlify.app/" class="button button--ghost" target="_blank">
-                    Live Demo
-                  </a>
-                  <a href="https://github.com/tulsigehlot/maptify" class="button" target="_blank">Source code</a>
-                </div>
-
-                <div class="work__card swipper-slide">
-                  <img src="src/img/guessmynumber-img.png" alt="guessmynumber" class="card">
-                    <p class="work__name">Guess My Number Game</p>
-                  <div class="home_buttons">
-                    <a  href="https://guessing-thenumber.netlify.app/" class="button button--ghost" target="_blank">
-                      Live Demo
-                    </a>
-                    <a href="https://github.com/tulsigehlot/guess-my-number" class="button" target="_blank">Source code</a>
-                  </div>
-
-                  <div class="work__card swipper-slide">
-                    <img src="src/img/weatherapp-img.png" alt="weatherapp" class="card">
-                      <p class="work__name">DropsDown- Weather App</p>
-                    <div class="home_buttons">
-                      <a  href="https://dropsdown.netlify.app/" class="button button--ghost" target="_blank">
-                        Live Demo
-                      </a>
-                      <a href="https://github.com/tulsigehlot/DropsDown" class="button" target="_blank">Source code</a>
-                    </div>
-      
-
+            </div>
+            <div class="work__card swiper-slide">
+              <img src="src/img/mapty-img.png" alt="mapty" class="card" />
+              <p class="work__name">Mapty App</p>
+              <div class="home_buttons">
+                <a
+                  href="https://maptyfi.netlify.app/"
+                  class="button button--ghost"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tulsigehlot/maptify"
+                  class="button"
+                  target="_blank"
+                  >Source code</a
+                >
+              </div>
+            </div>
+            <div class="work__card swiper-slide">
+              <img
+                src="src/img/guessmynumber-img.png"
+                alt="guessmynumber"
+                class="card"
+              />
+              <p class="work__name">Guess My Number Game</p>
+              <div class="home_buttons">
+                <a
+                  href="https://guessing-thenumber.netlify.app/"
+                  class="button button--ghost"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tulsigehlot/guess-my-number"
+                  class="button"
+                  target="_blank"
+                  >Source code</a
+                >
+              </div>
+            </div>
+            <div class="work__card swiper-slide">
+              <img
+                src="src/img/weatherapp-img.png"
+                alt="weatherapp"
+                class="card"
+              />
+              <p class="work__name">DropsDown- Weather App</p>
+              <div class="home_buttons">
+                <a
+                  href="https://dropsdown.netlify.app/"
+                  class="button button--ghost"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/tulsigehlot/DropsDown"
+                  class="button"
+                  target="_blank"
+                  >Source code</a
+                >
+              </div>
             </div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-
-      </section>
+      </section>>
 
       <!-- ================= CONTACT ========================= -->
       <section class="contact section" id="contact"></section>
-    </main>
+       <span class="section__subtitle">Get in touch</span>
+        <h2 class="section__title">Contact Me</h2>
+           
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+            <div class="contact__info">
 
+              <div class="contact__card">
+                <i class='bx bx-mail-send contact__card-icon'></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">tulsigehlot6@gmail.com</span>
+                      <a href="mailto:tulsigehlot6@gmail.com" target="_blank" class="contact__button">
+                        Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                      </a>
+              </div>
+
+              <div class="contact__card">
+                <i class='bx bxl-twitter contact__card-icon'></i>
+                <h3 class="contact__card-title">Twitter</h3>
+                <span class="contact__card-data">TulsiGehlot</span>
+                      <a href="https://twitter.com/TulsiGehlot" target="_blank" class="contact__button">
+                        Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                      </a>
+              </div>
+
+              <div class="contact__card">
+                <i class='bx bxl-linkedin contact__card-icon'></i>
+                <h3 class="contact__card-title">Linkedin</h3>
+                <span class="contact__card-data">tulsigehlot14</span>
+                      <a href="https://linkedin.com/in/tulsigehlot14/" target="_blank" class="contact__button">
+                        Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                      </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Write me your project</h3>
+
+            <form action="" class="contact__form">
+
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Name</label>
+                <input type="text" placeholder="Insert your name" class="contact__form-input">
+              </div>
+
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Mail</label>
+                <input type="email" placeholder="Insert your email" class="contact__form-input">
+              </div>
+
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Project</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+              </div>
+
+              <button class="button">Send Message</button>
+            </form>
+          </div>
+
+        
+        </div>   
+      </section>
+    </main>
     <!-- ================= FOOTER ========================= -->
     <footer class="footer"></footer>
 
     <!-- ================= SCROLLREVEAL ========================= -->
 
-        <!-- ================= SWIPER ========================= -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
+    <!-- ================= SWIPER JS ========================= -->
+    <script src="src/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="src/script.js"></script>
   </body>
 </html>

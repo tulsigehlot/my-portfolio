@@ -1,3 +1,4 @@
+'use strict'
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
@@ -17,18 +18,26 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*=============== SWIPER WORK ===============*/
-let swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+let swiperWork = new Swiper(".work__container", {
+    spaceBetween: 24,
+    loop: true,
+    grabCursor:true,
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
-    mousewheel: true,
-    keyboard: true,
+    // breakpoints: {
+    //     576: {
+    //       slidesPerView: 2,
+    //     },
+    //     768: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 48,
+    //     },
+    //   },
   });
+
+
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
