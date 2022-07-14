@@ -695,7 +695,11 @@ header {
     right: 0;
     margin: 0 auto;
   }
-  
+  .home__img{
+    width: 260px;
+  }
+
+
   .skills__container{
     justify-content: center;
 
@@ -726,6 +730,10 @@ header {
       justify-content: center;
       column-gap: 3rem;
     }
+    .home__img{
+      width: 300px;
+    }
+  
    
     .contact__content{
       width: 350px;
@@ -779,7 +787,7 @@ header {
   }
 
   .home__img{
-    width: 220px;
+    width: 320px;
   }
 
   .about__container{
