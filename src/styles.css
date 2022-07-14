@@ -432,6 +432,7 @@ header {
 /*=============== WORK ===============*/
 .work{
   padding: 18px;
+  margin-top: 70px;
 }
 .work__card{
   background-color: var(--container-color);
@@ -466,9 +467,14 @@ header {
 
 /*=============== CONTACT ===============*/
 
+.contact{
+  margin-top: -50px;
+}
+
 .contact__container{
   row-gap: 3rem;
   padding-bottom: 3rem;
+
 }
 
 .contact__title{
@@ -487,6 +493,7 @@ header {
   padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
+
 }
 
 .contact__card-icon{
@@ -680,7 +687,7 @@ header {
 
 @media screen and (min-width: 576px){
   .nav__menu{
-    width: 450px;
+    width: 328px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -708,6 +715,37 @@ header {
   .contact__form{
     width: 400px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 767px) {
+    .contact__container{
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      column-gap: 3rem;
+    }
+   
+    .contact__content{
+      width: 350px;
+    }
+    .contact__card{
+      width: 350px;
+      margin-left: 24px;
+    }
+
+    .contact__form-div{
+      width: 350px;
+      margin-right: 20px;
+
+    }
+
+    .nav__menu{
+      width: 500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+    }
+    
   }
 
 }
